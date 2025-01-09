@@ -1,5 +1,7 @@
--- THIS IS MAINLY FOR THE AOT:R "DEATHS DOOR" ACHIEVEMENT
--- CAN BE USED FOR WHATEVER YOU WOULD LIKE IT FOR.
+--[[
+THIS IS MAINLY FOR THE AOT:R "DEATHS DOOR" ACHIEVEMENT
+CAN BE USED FOR WHATEVER YOU WOULD LIKE IT FOR.
+]]
 
 local player = game.Players.LocalPlayer
 local humanoid = workspace.Characters[player.Name].Humanoid
