@@ -13,33 +13,37 @@ if game.PlaceId == 17725704589 or game.PlaceId == 18281472820 then
     if atb then
         gui:SetCore('SendNotification', {
             Title = 'Realistic Basketball',
-            Text = 'Looping Selected Stats!',
+            Text = 'Badges Maxed, and Stats Set!',
             Duration = 5
         })
     end
 
-    if atb then
+    if badges then
         for _, badge in pairs(badges:GetChildren()) do
-            badge.Value = 4
+            if badge:IsA('IntValue') then
+                badge.Value = 4
+            end
         end
-    end 
+    end
     
     while true do
         if atb then
             atb.Speed.Value = 150
-            atb.ThreePoint.Value = 99
-            atb.CloseShot.Value = 99
-            atb.DrivingDunk.Value = 99
-            atb.Steal.Value = 99
-            atb.Perimeter.Value = 99
-            atb.MovingShot.Value = 99
-            atb.MidRange.Value = 99
-            atb.Strength.Value = 99
-            atb.Rebounding.Value = 99
+            atb.ThreePoint.Value = 105
+            atb.CloseShot.Value = 105
+            atb.DrivingDunk.Value = 105
+            atb.Steal.Value = 105
+            atb.Perimeter.Value = 105
+            atb.MovingShot.Value = 105
+            atb.MidRange.Value = 105
+            atb.Strength.Value = 105
+            atb.Rebounding.Value = 105
         end
         task.wait(0.5)
     end
     
 else
-    print('Wrong Game !!!')
+    error('Wrong Game !!!')
 end
+
+-- this script got me to a 99.6 W% at over 800 games and got called out a total of 0 times! --
