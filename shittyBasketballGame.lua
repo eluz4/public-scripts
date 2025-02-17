@@ -10,7 +10,7 @@ if game.PlaceId == 17725704589 or game.PlaceId == 18281472820 then
     local atb = players.LocalPlayer:WaitForChild("Attributes")
     local badges = game:GetService("Players").LocalPlayer:WaitForChild("Badges")
     
-    if atb then
+    if atb and badges then
         gui:SetCore('SendNotification', {
             Title = 'Realistic Basketball',
             Text = 'Badges Maxed, and Stats Set!',
