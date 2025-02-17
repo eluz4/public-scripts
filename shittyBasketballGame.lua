@@ -38,6 +38,7 @@ if game.PlaceId == 17725704589 or game.PlaceId == 18281472820 then
             atb.MidRange.Value = 105
             atb.Strength.Value = 105
             atb.Rebounding.Value = 105
+            atb.Interior.Value = 105
         end
         task.wait(0.5)
     end
