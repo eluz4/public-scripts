@@ -26,9 +26,9 @@ if game.PlaceId == 17725704589 or game.PlaceId == 18281472820 then
         end
     end
     
-    while true do
+    while true do -- needs to be a loop since when doing some actions, the values reset to the default / your build.
         if atb then
-            atb.Speed.Value = 150
+            atb.Speed.Value = 150 -- change this to whatever speed youd like.
             atb.ThreePoint.Value = 105
             atb.CloseShot.Value = 105
             atb.DrivingDunk.Value = 105
